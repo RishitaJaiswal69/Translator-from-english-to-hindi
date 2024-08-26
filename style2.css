@@ -1,0 +1,28 @@
+#a{
+    font-size:20px;
+    font-family: Arial;
+    color:red;
+}
+.second{
+    font-size:20px;
+    font-family: Arial;
+    margin-left: 70px;
+    display: flex;
+    width:100%;
+}
+
+.left{
+    width:50%;
+}
+
+.right{
+    width:50%;
+}
+#B{
+    font-size:larger;
+    color:black;
+    font-weight: 600;
+}
+#x{
+    font-size: 18px;
+}

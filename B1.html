@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .container{
+        max-width: 690px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 7px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.01);
+        background-color: rgb(75, 19, 187);
+        margin: auto;
+       }
+       
+       body{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 0 10px;
+       min-height: 100vh;
+      }
+
+      .wrapper{
+        border-radius: 5px;
+        border: 1px solid black;
+       }
+
+      .wrapper .text-input{
+      display: flex;
+      border-bottom: 1px solid #fcf9f9;
+     }
+
+      .text-input .to-text{
+       border-radius: 0px;
+       border-left: 1px solid #f8f2f2;
+       background-color: white;
+       }
+       .container button{
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: white;
+  
+}
+
+    .text-input textarea{
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+      }
+
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+     }
+      .control{
+        display: flex;
+
+      }
+       
+      .control .row-form{
+        margin-left: 50px;
+        font-size: 20px;
+       
+      }
+      .control .row-to{
+
+        margin-left: 150px;
+      font-size: 20px;
+     
+      }
+
+      .control .exchange{
+        margin-left:160px ;
+        font-size:  20px;
+      }
+      
+      select{
+        font-size: 18px;
+        
+      }
+       #aa{
+        padding-top: 900px;
+        width:100%;
+        margin: auto;
+       }
+       #bb{
+        padding-top: 50px;
+       }
+    </style>
+</head>
+<body>
+     <div>
+      <div class="container">
+          <div class="wrapper">
+            <div class="text-input">
+             <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+            </div>
+            <div>
+                <ul class="control">
+                    <li class="row-form">
+                         <select></select>
+                     </li>
+                     <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                     <li class="row-to">
+                         <select></select>
+                    </li>
+                 </ul>
+            </div>
+           <div class="text-input">
+             <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+           </div>
+
+          </div>
+      <button>Translate Text</button>
+      </div>
+    
+       <div id="box">
+        
+    <div id="bb"></div>
+<div style="display: flex;justify-content: center;text-align: center;font-size: 29px;">Examples of Language translator</div>
+<hr>
+<div class="second">
+    <div class="left">
+
+<div>I am walking</div>         
+<br>      
+<div id="a">मैं चल रहा हूँ|</div>
+<br>
+
+<div>Its raining and its too humid.</div>
+<br>             
+<div id="a">बारिश हो रही है और बहुत नमी है|</div>
+
+<br>
+
+    <div>It’s not your cup of tea to defeat.</div>
+    <br>
+    <div id="a">मुझे हराना तुम्हारी बस की बात नही है|</div>
+
+<br>
+
+<div>He must have created a new mischief.</div>
+<br>
+<div id="a">उसने जरुर कोई नया गुल खिलाया होगा|</div>
+
+<br>
+
+    <div >He had beaten me, that too with a stick.</div>
+    <br>
+    <div id="a">उसने मुझे मारा और वो भी लाठी से|</div>
+
+<br>
+
+    <div>A favor for a favor I wanted.</div>
+    <br>
+    <div id="a">अहसान के बदले अहसान चाहता था में|</div>
+
+<br>
+
+
+    <div>Do you eat anything else besides this.</div>
+    <br>
+    <div id="a">इसके अतिरिक्त कुछ और खाते हो क्या|</div>
+
+<br>
+
+
+    <div> I made him dance</div>
+    <br>
+    <div id="a">मेने उसे नचाया</div>
+    </div>
+
+  <div class="right">
+    <div>Do you eat anything else besides this.</div>
+    <br>
+    <div id="a">इसके अतिरिक्त कुछ और खाते हो क्या|</div>
+
+<br>
+
+<div>what all can I eat.</div>
+<br>
+<div id="a">मैं क्या क्या खा सकता हु|</div>
+<br>
+
+<div>Nobody can replace my father.</div>
+<br>
+<div id="a">मेरे पिता की जगह कोई नही ले सकता है|</div>
+<br>
+
+<div>Do you eat anything else besides this.</div>
+<br>
+<div id="a">इसके अतिरिक्त कुछ और खाते हो क्या|</div>
+<br>
+
+<div>Couldn’t help </div>
+<br>
+<div id="a">रहा नही गया </div>
+<br>
+
+<div>It is the friends who help us in the long run.</div>
+<br>
+<div id="a">आखिर में दोस्त ही काम आते है|</div>
+<br>
+
+<div>Although he is wearing warm clothes.</div>
+<br>
+<div id="a">हालाकि उसने गर्म कपडे पहने है|</div>
+<br>
+
+<div>It was he, who had said it.</div>
+<br>
+<div id="a">उसने ही तो ये कहा था|</div>
+</div>
+</div>
+
+
+<hr>
+<p style="font-size: 32px; text-decoration: underline;">
+    Frequently Asked Questions(FAQ) on English To Hindi Translator
+</p>
+<div class="faq">
+    <p>
+        <div id="B">1. What is an English to Hindi translator?</div>
+<div id="x">An English to Hindi translator is a tool or software program designed to convert text from the English language to the Hindi language.</div>
+
+<br>
+<div id="B">2. How does an English to Hindi translator work?</div>
+<div id="x">English to Hindi translators typically use algorithms and language rules to convert English words, phrases, or sentences into their Hindi equivalents. They may also utilize pre-existing databases of translations.</div>
+
+<br>
+
+<div id="B">3. Is an English to Hindi translator accurate?</div>
+<div id="x">The accuracy of an English to Hindi translator depends on various factors, including the complexity of the text, the quality of the translation algorithm, and the database of translations. While they can provide a general understanding of the text, they may not always capture nuances accurately.</div>
+<br>
+
+<div id="B">4. Can an English to Hindi translator translate long documents?</div>
+<div id="x">Yes, many English to Hindi translators can handle long documents. However, the quality of the translation may vary, and it's recommended to review and edit the translated text for accuracy.</div>
+
+<br>
+
+<div id="B">5. Are there any limitations to using an English to Hindi translator?</div>
+<div id="x">English to Hindi translators may struggle with translating idiomatic expressions, cultural nuances, and technical terms accurately. Additionally, they may not fully capture the tone or intent of the original text.</div>
+
+<br>
+
+<div id="B">6. Can an English to Hindi translator translate spoken language?</div>
+<div id="x">Some advanced translation tools may offer speech-to-text capabilities for translating spoken English into written Hindi. However, accuracy may vary, especially with accents and dialects.</div>
+
+<br>
+
+<div id="B">7. Are there any privacy concerns when using an English to Hindi translator?</div>
+<div id="x">It's essential to consider privacy concerns when using any online tool. Make sure to review the privacy policy of the translator tool to understand how your data is handled and stored.</div>
+
+<br>
+
+<div id="B">8. Can I use an English to Hindi translator for professional documents?</div>
+<div id="x">While English to Hindi translators can be helpful for getting a basic translation of professional documents, it's recommended to have a human translator review and edit the translated text for accuracy, especially for important or sensitive documents.</div>
+
+<br>
+
+<div id="B">9. Are there any costs associated with using an English to Hindi translator?</div>
+<div id="x">Many online English to Hindi translators are free to use. However, some may offer premium features or subscriptions for additional functionality.</div>
+
+<br>
+
+<div id="B">10. How can I find a reliable English to Hindi translator?</div>
+<div id="x">Look for well-established translation tools with positive reviews and ratings. Additionally, consider testing the translator with sample texts to evaluate its accuracy and suitability for your needs.</div>
+    </p>
+</div>
+
+
+       </div>
+       </div>
+       
+    <script src="js/countries.js"></script>
+    <script src="js/script1.js"></script>
+
+</body>
+</html>
